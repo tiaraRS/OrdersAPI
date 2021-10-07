@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Hx6aZRoTg9E/oe53QxYE3M87wY3vzsMVNASNXFjXTl5SEBuHIGIpL7WmyxOad+4xLADz0ANH3yYF8uYHlkGAPg==",
+  "success": true,
+  "projectFilePath": "D:\\UNIVERSIDAD\\SEMESTRE 6\\TEC WEB\\PROYECTOS\\OrdersAPI-Tiara_Rojas_Stambuk\\OrdersAPI-Tiara_Rojas\\ShopAPI\\Examen1\\Orders.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DELL\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.18\\microsoft.netcore.app.host.win-x64.3.1.18.nupkg.sha512"
+  ],
+  "logs": []
+}

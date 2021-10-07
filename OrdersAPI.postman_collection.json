@@ -1,0 +1,176 @@
+{
+	"info": {
+		"_postman_id": "37aa7ab5-65f5-4f0c-bf23-98886250127e",
+		"name": "OrdersAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Dish",
+			"item": [
+				{
+					"name": "CreateDish",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"name\": \"Silpancho de pollo\",\r\n        \"restaurantName\": \"Panchita\",\r\n        \"price\": 15,\r\n        \"category\": \"Pollo\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/dishes",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"dishes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetDishes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/dishes",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"dishes"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DeliverOrder",
+			"item": [
+				{
+					"name": "CompleteOrder",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"DeliverName\":\"Mario\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/orders/1/completeOrder",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"orders",
+								"1",
+								"completeOrder"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetNonCompleteDeliverOrders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/orders/NonCompleteOrders",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"orders",
+								"NonCompleteOrders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateOrder",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"dishId\":2,\r\n   \"clientName\":\"Sandra\",\r\n   \"address\":\"Av Circunvalacion\"  \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/orders",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetSellsByRestaurant",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/orders/sellsByRestaurant",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"orders",
+								"sellsByRestaurant"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetOrders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/orders",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
